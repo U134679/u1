@@ -1,4 +1,25 @@
 <!doctype html>
 <html>
-
+  <head>
+    <title>
+      golki
+    </title>
+  </head>
+  <body>
+    <form action = "www.google.com" method= "POST">
+      <select name="gender" id="gender">
+        <option value="male" onChange="onMale" id="maleopt">male</option>
+      </select>
+    </form>
+    <p id="output">Placeholder</p>
+    <script>
+      function onMale(){
+        var genderop = document.getElementById("gender");
+        var genderopt = genderop.options[genderop.selectedIndex].text;
+        if genderopt == "male"{
+          document.getElementById('output').innerHTML() = "NO U"
+        }
+      }
+    </script>
+  </body>
 </html>
