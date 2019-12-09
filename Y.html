@@ -20,6 +20,14 @@
     </form>
 --><!--NNO DONT USE PLACEHOLDERS YOU MORON-->
     <script>
-    </script>
+  
+     function getUrlParam(pname) {
+        var urlObj = new URL(window.location.href);
+        console.log("URL Object: " + urlObj);
+        var paramres = urlObj.searchParams.get(pname);
+        console.log("Parameter " + pname + ":" + paramres);
+        return paramres;
+      }
+  </script>
   </body>
 </html>
