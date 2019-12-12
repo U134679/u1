@@ -1,5 +1,3 @@
-function quick (name) {
-if (name=="chess","Chess","CHESS"){
-location.href = 'http://www.chess.com';
-} 
-} 
+function i(){
+document.write('ik')
+}
