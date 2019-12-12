@@ -1,6 +1,5 @@
-var quickName=
 function quick (name) {
-if (name=="chess","Chess","CHESS"{
-
+if (name=="chess","Chess","CHESS"){
+location.href = 'http://www.chess.com';
 } 
 } 
