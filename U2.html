@@ -5,14 +5,19 @@
 <meta charset="utf-8">
 </head>
 <body>
-<button onclick = Bbfunction() > here </button>
+<form action= Bbfunction() method="POST">
+<input type="text" name="q" value="c">
+<button type="submit"> here </button>
+</input>
+</form>
+<p id="demo"></p>
 <script>
 function Bbfunction () {
 var Bbnotes =["c" , "c#" , "d" ,"e-" ,"e" ,"f" ,"f#" ,"g" ,"a-" ,"a" ,"b-" ,"b" ] 
 var realNotes = prompt("enterNotes" "c") 
 if  (realNotes ! = null) {
 if (realNotes.length>1){
-console.log("stop playing")
+document.getElementById("demo").innerHTML=("stop playing")
 } 
 var a=0
 var i=0
@@ -21,13 +26,13 @@ while (realNotes != Bbnotes [a]){
 a++;
 i++;
 if(i<2){
-return Bbnotes [9] 
+document.getElementById("demo"). innerHTML=Bbnotes [9] 
 }
 } 
 var u=i-2
-return Bbnotes [u] 
+document.getElementById("demo"). innerHTML=Bbnotes [u] 
 } 
-return Bbnotes [11]
+document.getElementById("demo"). innerHTML=Bbnotes [11]
 } 
 
 } 
