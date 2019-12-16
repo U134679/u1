@@ -5,11 +5,31 @@
 <meta charset="utf-8">
 </head>
 <body>
-<button onclick="Bbfunction()"> here </button>
-<p id=gg></p>
+<button onclick = Bbfunction() > here </button>
 <script>
 function Bbfunction () {
-var realNotes = prompt("enterNotes","c") 
+var Bbnotes =["c" , "c#" , "d" ,"e-" ,"e" ,"f" ,"f#" ,"g" ,"a-" ,"a" ,"b-" ,"b" ] 
+var realNotes = prompt("enterNotes" "c") 
+if  (realNotes ! = null) {
+if (realNotes.length>1){
+console.log("stop playing")
+} 
+var a=0
+var i=0
+if (realNotes != Bbnotes [a]){
+while (realNotes != Bbnotes [a]){
+a++;
+i++;
+if(i<2){
+return Bbnotes [9] 
+}
+} 
+var u=i-2
+return Bbnotes [u] 
+} 
+return Bbnotes [11]
+} 
+
 } 
 </script>
 </body>
