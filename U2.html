@@ -5,32 +5,43 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <button onclick = Bbfunction() > here </button>
-      <script>
-         var i = 0;
-         var a = 0;
-         function Bbfunction () {
-             var Bbnotes =["c" , "c#" , "d" ,"e-" ,"e" ,"f" ,"f#" ,"g" ,"a-" ,"a" ,"b-" ,"b" ]; 
-             var realNotes = prompt("enterNotes","c");
-             if  (realNotes ! = null) {
-                 if (realNotes.length>1){
-                        console.log("stop playing");
-                    } 
-                 if (realNotes !=[a]){
-                        while (realNotes != Bbnotes [a]){
-                              a++;
-                              i++;
-                              if(i<2){
-                                 return Bbnotes [9] ;
-                                }
-                              } 
-                        var u= i-2 ;
-                        return Bbnotes [u] ;
-                    } 
-                 return Bbnotes [11] ;
-                 } 
-
-                              } 
-    </script>
+     <button onclick=Bbfunction()>here</button>
+     <script>
+        let i;
+        let a;
+        function Bbfunction () {
+           const Bbnotes =["c",
+                           "c#",
+                           "d",
+                           "e-",
+                           "e",
+                           "f",
+                           "f#",
+                           "g",
+                           "a-",
+                           "a",
+                           "b-",
+                           "b"
+                                ];
+           let realNotes = prompt ("enterNotes","c");
+           if  (realNotes !== null) {
+             if (realNotes.length>1){
+               console.log("stop playing");
+               }
+             if (realNotes !== Bbnotes [a]){
+               while (realNotes !== Bbnotes [a]){
+                    i = i+1;
+                    a = a+1;
+                    if(i<2){
+                      return Bbnotes [9] ;
+                      }
+                    }
+               let u= i-2 ;
+               return Bbnotes [u] ;
+               }
+             return Bbnotes [11] ;
+             }
+           }
+     </script>
   </body>
 </html>
