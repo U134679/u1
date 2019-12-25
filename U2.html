@@ -26,20 +26,20 @@
            let realNotes = prompt ("enterNotes","c");
            if  (realNotes !== null) {
              if (realNotes.length>1){
-               console.log("stop playing");
+               console.warn("stop playing");
                }
              if (realNotes !== Bbnotes [a]){
                while (realNotes !== Bbnotes [a]){
                     i = i+1;
                     a = a+1;
                     if(i<2){
-                      return Bbnotes [9] ;
+                      document.getElementById("demo").innerHTML = Bbnotes [9] ;
                       }
                     }
                let u= i-2 ;
-               return Bbnotes [u] ;
+               document.getElementById("demo").innerHTML = Bbnotes [u] ;
                }
-             return Bbnotes [11] ;
+             document.getElementById("demo").innerHTML = Bbnotes [11] ;
              }
            }
      </script>
