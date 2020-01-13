@@ -9,11 +9,11 @@
       <script>
         var a = 0
         var res = 0
-        for (var i=1;i<=43256;i++){
+        for (var i=1;i<=999965;i++){
           res += 1/i**2
+          document.getElementById("demo").innerHTML = res
         }
         res = Math.sqrt(res*6)
-        document.getElementById("demo").innerHTML = res
       </script>
     </body>
   </html> 
